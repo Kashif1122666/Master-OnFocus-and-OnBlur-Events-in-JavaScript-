@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chapter 48: Events: fields</h1>
+
+     <!-- Field events we're gonna discuss -->
+    <!-- onFocus: -->
+     <!-- It tells Javascript to do something when the user clicks in the field. -->
+     <!-- onBlur -->
+     <!-- It tells Javascript to do something when the user clicks outside the field.
+     when the field is not focused anymore -->
+
+     <!-- turn the background color to red when the field is focused  -->
+     <!-- Email: <input type="email" onfocus="this.style.background='red';"> <br> -->
+      <!-- password: <input type="password"  onfocus="this.style.background='red';"> <br> -->
+
+      <!-- Turn the background color back to white when the field is not focused anymore  -->
+       <!-- Email: <input type="email" onfocus="this.style.background='red';" onblur="this.style.background='white';"> <br> -->
+        <!-- password: <input type="password" onfocus="this.style.background='red';" onblur="this.style.background='white';"><br> -->
+
+
+           <!-- A slightly more professional approach would be to call function that accomplish
+           the same things. -->
+
+           <!-- Email: <br>
+           <input type="email" size="38" onfocus="makeFieldYellow(this);" onblur="makeFieldwhite(this);">
+
+           <script>
+            function makeFieldwhite(element){
+                 element.style.background="white";
+            }
+            function makeFieldYellow(element){
+                 element.style.background="yellow";
+            }
+           </script> -->
+
+           <!-- note: we'll talk about 'this' keyword later in the course
+           doing above stuff with functions is totally optional . I just wanted to demonstrate
+           it for you guys -->
+
+
+                
+</body>
+</html>
